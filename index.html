@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Career Path Generator</title>
+        <link rel="stylesheet" href="worknet.css">
+    </head>
+    <body>
+        <header>
+            <h1>Career Path Generator</h1>
+            <nav>
+                 <a href="#home">Home</a>
+                 <a href="#career-library">Library</a>
+                 <a href="#career-identity">Career Identity</a>
+                 <a href="#about">About</a>
+                 <a href="#Contact">Contact</a>
+            </nav>
+        </header>
+        <!----Hero section-->
+        <section id="home" class="section"> 
+            <h2>Welcome!</h2>
+            <p> From potential to profession — find your path with Career Path Generator.</p>
+            <a href="#career-identity" class="btn">Explore Smart CPG.</a>
+        </section>
+
+        <!--career identity section-->
+        <section id="career-identity" class="section">
+            <h2>Career Identity</h2>
+            <p>Discover your <strong>Career Identity</strong> with our smart "CPG" quiz. It analyzes your skills, strengths, and interests to recommend career paths where you can thrive.</p>
+            <p>Answer a few questions to discover your best-fit career path.</p>
+            <form id="career-form">
+                <div class="input-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                </div>
+
+                <div class="input-group">
+                        <label>Study Stream:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="stream" value="STEM"> STEM</label>  
+                            <label><input type="checkbox" name="stream" value="Commerce"> Commerce</label>
+                            <label><input type="checkbox" name="stream" value="Social Sciences"> Social Sciences</label>
+                        </div>
+                </div>
+
+                <div class="input-group">
+                       <label>Interests:</label>
+                       <div class="checkbox-group">
+                            <label><input type="checkbox" name="interest" value="Tech"> Tech</label>
+                            <label><input type="checkbox" name="interest" value="Business"> Business</label>
+                            <label><input type="checkbox" name="interest" value="Creative">Creative</label>
+                            <label><input type="checkbox" name="interest" value="Health">Health</label>
+                        </div>
+                        
+                </div>
+
+
+        <!--Submit Button-->
+        <button type="submit">Generate Career Path</button>
+            </form>
+        </section>
+
+        <!--Career Libary Section-->
+        <section id="career-library" class="section hidden">
+            <h2 id="career-library-title">Career Library</h2>
+            <p id="career-library-subtitle">Browse & Explore different careers and pathways.</p>
+
+        <!-- Search Bar code-->
+            <div class="career-search">
+                <input type="text" id="career-search" placeholder="search careers by name or skill">
+
+            </div>
+
+
+        <!--Filter Buttons---> 
+            <div class="career-filters">
+                <button data-cluster="All">All</button>
+                <button data-cluster="Data & Tech">Data & Tech</button>
+                <button data-cluster="Creative Arts">Creative Arts</button>
+                <button data-cluster="Health & Science">Health & Science</button>
+                <button data-cluster="Accounting, Economics & Business">Accounting, Economics & Business</button>
+
+            </div>
+
+            <div class="career-container">  <!--job/training cards will be added here, dynamically--><!--Data & Tech Career cards-->
+                <div class="career-card" data-cluster="Data & Tech" data-stream="STEM" data-interest="Tech">
+                    <img src="images/Workwize logo.png" alt="Data Analyst" class="career-img">
+                    <h3>Data Analyst</h3>
+                    <p>Analyze data to uncover insights that help the businesses make informed decisions</p>
+                    <p><strong>Skills</strong> Excel, SQL, Python</p> 
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <div class="career-card" data-cluster="Data & Tech" data-stream="STEM" data-interest="Tech">
+                    <img src="images/Workwize logo.png" alt="Software Engineer" class="career-img">
+                    <h3>Software Engineer</h3>
+                    <p>Develop and maintain software applications for various platforms</p>
+                    <p><strong>Skills</strong> Java, Python, Git, Problem Solving</p> 
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <div class="career-card" data-cluster="Data & Tech" data-stream="STEM" data-interest="Tech">
+                    <img src="images/Workwize logo.png" alt="Data Scientist" class="career-img">
+                    <h3>Data Scientist</h3>
+                    <p>Use advanced analytics and AI to extract insights from complex datasets</p>
+                    <p><strong>Skills</strong> Python, R, Machine Learning, SQL</p> 
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <!--Health & Science career cards-->
+                <div class="career-card" data-cluster="Health & Science" data-stream="STEM" data-interest="Health">
+                    <img src="images/Workwize logo.png" alt="Nurse" class="career-img">
+                    <h3>Nurse</h3>
+                    <p>Provide patient care and support healthcare teams in hospitals or clinics.</p>
+                    <p><strong>Skills</strong> Patient Care, Communication, Organization</p> 
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <div class="career-card" data-cluster="Health & Science" data-stream="STEM" data-interest="Health">
+                    <img src="images/Workwize logo.png" alt="Pharmacist" class="career-img">
+                    <h3>Pharmacist</h3>
+                    <p>Dispense medications and advise patients on safe usage and treatment options.</p>
+                    <p><strong>Skills</strong> Excel, SQL, Python</p> 
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <div class="career-card" data-cluster="Health & Science" data-stream="STEM" data-interest="Health">
+                    <img src="images/Workwize logo.png" alt="biomedical-scientist" class="career-img">
+                    <h3>biomedical Scientist</h3>
+                    <p>Conduct research to develop treatments and improve healthcare solutions</p>
+                    <p><strong>Skills</strong>Lab Techniques, Data Analysis, Research</p> 
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <div class="career-card" data-cluster="Creative Arts" data-stream="Social Sciences" data-interest="Creative">
+                    <img src="images/Workwize logo.png" alt="UX Designer" class="career-img">
+                    <h3>UX Designer</h3>
+                    <p>Design user-friendly interfaces and experiences for apps and websites</p>
+                    <p><strong>Skills</strong> Figma, WireFraming, User Research</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <div class="career-card" data-cluster="Creative Arts" data-stream="Social Sciences" data-interest="Creative">
+                    <img src="images/Workwize logo.png" alt="Graphic Designer" class="career-img">
+                    <h3>Graphic Designer</h3>
+                    <p>Create visual content for print and digital media, including logos, ads, and social campaigns</p>
+                    <p><strong>Skills</strong> Photoshop, Illustator, Creativity</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <div class="career-card" data-cluster="Creative Arts" data-stream="Social Sciences" data-interest="Creative" >
+                    <img src="images/Workwize logo.png" alt="Musician" class="career-img">
+                    <h3>Musician</h3>
+                    <p>Perform, compose, and produce music across various styles and platform.</p>
+                    <p><strong>Skills</strong> Instrument proficiency, Creativity, Collaboration</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <!---Accounting, Economics & Business-->
+                <div class="career-card" data-cluster="Accounting, Economics & Business" data-stream="Commerce" data-interest="Business">
+                    <img src="images/Workwize logo.png" alt="Accountant" class="career-img">
+                    <h3>Accountant</h3>
+                    <p>Manage finincial records, prepare reports, and ensure complience with laws and regulations.</p>
+                    <p><strong>Skills</strong> Accounting, Excel, Attention to detail</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <div class="career-card" data-cluster="Accounting, Economics & Business" data-stream="Commerce" data-interest="Business">
+                    <img src="images/Workwize logo.png" alt="Economist" class="career-img">
+                    <h3>Economist</h3>
+                    <p>Analyze economic data and trends to provide insights for business or government decisions.</p>
+                    <p><strong>Skills</strong> Research, Data Analysis, Critical Thinking</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+                <div class="career-card" data-cluster="Accounting, Economics & Business" data-stream="Commerce" data-interest="Business" >
+                    <img src="images/Workwize logo.png" alt="Business Analyst" class="career-img">
+                    <h3>Business Analyst</h3>
+                    <p>Evaluate business processes, identify improvements, and support data-driven decision.</p>
+                    <p><strong>Skills</strong> Data Analysis, Communication, Problem Solving</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--Opportunities Section Soon--> 
+
+        <!--About section-->
+        <section id="about" class="section hidden">
+            <h2>About</h2>
+            <p>Helping students and job seekers align skills with opportunities.</p>
+            <p> &copy; 2025 Career Path Generator.</p>
+        </section>
+
+        <!--Contact section-->
+        <section id="Contact" class="section hidden">
+            <h2>Contact</h2>
+            <p>Have questions or feedback? we'd love to hear from you. Reach out, we are here to help find your career path.</p>
+            <p>Generate your ideal career.</p>
+            <div id="library-content">
+                <!--job/training cards will be added here, dynamically-->
+            </div>
+        </section>
+
+        <!--footer removed--->
+
+        <!--Mobile tab bar-->
+        <div class="tab-bar">
+            <a href="#home"><span>🏠</span>Home</a>
+            <a href="#career-library"><span>📚</span>Library</a>
+        <!---<a href="#opportunities"><span>💼</span>Jobs</a>--->
+            <a href="#about"><span>ℹ️</span>About</a>
+            <a href="#Contact">☎️<span>Contact</a>
+
+        </div>
+    <script src="career-library.js"></script>
+    </body>
+</html>
